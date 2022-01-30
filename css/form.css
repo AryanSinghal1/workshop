@@ -1,0 +1,249 @@
+.container1 {
+    height: 80vh;
+    width: 90%;
+    margin:5% 5%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 10px 10px 40px gray;
+    /* margin-bottom: 15%; */
+    border-radius: 10px;
+  }
+  .form {
+    
+    width: 100%;
+    height: 100%;
+    /* box-shadow: 20px 30px 90px 1px rgb(204, 203, 203),
+      -20px -30px 90px 1px rgb(204, 203, 203); */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .form_about {
+    width: 30%;
+    height: 100%;
+    /* background-color: Rgb(255,136,0); */
+    background-color: #f7af24;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form_about h4 {
+    font-weight: 600;
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+  }
+  #form_box {
+    font-size: 1.2rem;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form_details {
+    width: 80%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact h1 {
+    font-size: 2.5rem;
+    margin: 10px;
+  }
+  .input_fields:nth-child(5) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 95%;
+  }
+  .contact {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .input_fields {
+    width: 90%;
+    margin: 0;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .input_fields p {
+    margin: 2px;
+  }
+  .submit {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #btn {
+    font-size: 20px;
+    border: none;
+    padding: 10px 40px;
+    margin-bottom: 0.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: black;
+    transition: background-color 1s;
+    color: white;
+  }
+  .input_fields input {
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    font-size: 1rem;
+    transition: border-bottom 1s;
+  }
+  #btn:hover {
+    background-color: #f7af24;
+    color: white;
+    box-shadow: 0.5px 0.5px 99px 2px #f7af24;
+    transition: color 0.5s;
+  }
+  .input_fields input:focus {
+    border-bottom: 2px solid #f7af24;
+  }
+  .footer {
+    height: 20vh;
+    background-color: #f7af24;
+    /* background-color: Rgb(255,136,0); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer img {
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    cursor: pointer;
+    transition: all 1s;
+  }
+  .footer img:hover {
+    width: 60px;
+    height: 60px;
+  }
+  .footer2 {
+    height: 10vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer2 p {
+    font-size: 25px;
+    /* font-family: 'Oswald', sans-serif; */
+  }
+@media only screen and (max-width: 1024px){
+    
+      .input_fields {
+        width: 90%;
+      }
+      .contact h1 {
+        font-size: 1.7rem;
+      }
+      .form_about h4 {
+        font-size: 35px;
+      }
+      .input_fields:nth-child(5) {
+        width: 95%;
+      }
+    
+      .input_fields input {
+        font-size: 0.85rem;
+      }
+      .input_fields p {
+        font-size: 0.9rem;
+      }
+      .form_details {
+        width: 85%;
+      }
+      .footer p {
+        font-size: 20px;
+      }
+      
+}
+
+@media only screen and (max-width: 768px) {
+    
+        /* .form{
+            height: 80%;
+        } */
+      .container1{
+        margin-bottom: 20%;
+      }
+      .skills-main h1{
+        font-size: 20px;
+      }
+      .form_about h4 {
+        font-size: 1.7rem;
+        padding: 10px;
+      }
+      .form_details {
+        grid-template-columns: auto;
+      }
+      .input_fields p {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+      }
+      .input_fields input {
+        font-size: 0.6rem;
+      }
+      .input_fields {
+        height: 100%;
+        width: 70%;
+      }
+      .input_fields:nth-child(5) {
+        grid-column-end: 2;
+        width: 70%;
+      }
+    
+      #btn {
+        font-size: 10px;
+      }
+    
+      .footer p {
+        font-size: 15px;
+      }
+}
+ @media only screen and (max-width: 425px) {
+   
+    
+    .footer2 {
+      
+      width: 100vw;
+      height: 8vh;
+    }
+    .footer {
+      
+      height: 10vh;
+    }
+    .footer2 p {
+      font-size: 15px;
+    }
+  
+    .footer img {
+      width: 20px;
+      height: 20px;
+      margin: 10px;
+    }
+ 
+    button {
+      font-size: 1rem;
+    }
+  
+    .footer p {
+      font-size: 10px;
+    }
+  }
+     
+  
