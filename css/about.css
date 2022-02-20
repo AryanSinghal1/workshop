@@ -1,18 +1,32 @@
-
+.about{
+    flex: 1;
+}
+#skills{
+    height: 100vh;
+    flex: 1;
+}
 h1.about{
     margin-top: 50px;
     text-align: center;
     color:#f7af24;
     font-size: 70px;
+    letter-spacing: 0.5px;
 }
 .aboutme{
+    display: flex;
+flex: 1;
+flex-direction: column;
+}
+.aboutme2{
     
    
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 50px;
-   
+    font-size: 24px;
+   line-height: 30px;
+   letter-spacing: 0.5px;
     /* background-color: tomato; */
 }
 .leftabout{
@@ -35,7 +49,7 @@ h1.about{
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px 15px;
+    box-shadow:  10px 0px 20px rgba(0, 0, 0, 0.35);
 }
 .descabout{
     flex:1;
@@ -50,10 +64,10 @@ h1.about{
   
 
 @media only screen and (max-width: 768px){
-    h1.about{
-        font-size: 20px;
+    .about{
+        text-align: center;
     }
-    .aboutme {
+    .aboutme2 {
         flex-direction: column;
     }
     .img2container {
