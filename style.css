@@ -22,10 +22,6 @@ body {
   z-index: 10;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 10px;
 }
-.nav-active {
-  transform: translate(0);
-  visibility: inherit;
-}
 .toggle .line1 {
   transform: rotate(45deg) translate(0, 4px);
 }
@@ -657,6 +653,9 @@ p.b {
     height: 40px;
     width: 40px;
   }
+  #skills{
+    height: 30rem;
+  }
 
   .skills img:hover {
     height: 45px !important;
@@ -689,9 +688,6 @@ p.b {
   }
   .h p {
     display: none;
-  }
-  .skills {
-    height: 150px;
   }
   .des {
     padding-right: 10%;
@@ -748,6 +744,10 @@ p.b {
   }
 }
 
+.nav-active {
+  transform: translate(0);
+  visibility: inherit;
+}
 @media screen and (max-width: 425px) {
   .skills img {
     height: 30px;
@@ -790,7 +790,12 @@ p.b {
     height: 20px;
     margin: 10px;
   }
-
+.a{
+  font-size: 50px;
+}
+.aboutme{
+  font-size: 50px;
+}
   #btn {
     font-size: 10px;
     padding: 5px 12px;
